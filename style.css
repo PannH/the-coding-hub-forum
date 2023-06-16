@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+   --violet-blue: #524fed;
+   --violet-blue-subtle: #7d7bf2;
+   --violet-blue-ultra-subtle: #dadaec;
+}
+
+body {
+   font-family: 'DM Sans';
+
+   min-height: 100vh;
+}
+
+*::-webkit-scrollbar {
+  width: 12.5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--violet-blue);
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.bg-violet-blue {
+   background-color: var(--violet-blue);
+}
+
+.text-violet-blue {
+   color: var(--violet-blue);
+}
+
+.border-violet-blue {
+   border-color: var(--violet-blue) !important;
+}
+
+@media (width <= 780px) {
+   .nav-toggler-btn {
+      display: initial !important;
+   }
+
+   .navbar {
+      flex-wrap: wrap;
+   }
+
+   .navbar-nav {
+      display: none !important;
+
+      width: 100%;
+
+      padding-top: 15px;
+   }
+
+   .navbar-nav > li {
+      margin: 7.5px 0;
+   }
+
+   .navbar-nav.active {
+      display: initial !important;
+   }
+}
+
+@media (width <= 390px) {
+   .navbar-brand > h2 {
+      display: none;
+   }
+}
+
+.hero-section {
+   min-height: 700px;
+}
+
+.btn:hover, .btn:active {
+   background-color: rgba(255, 255, 255, .25);
+}
+
+.btn.bg-transparent:hover, .btn.bg-transparent:active {
+   background-color: var(--violet-blue-ultra-subtle) !important;
+   color: var(--violet-blue);
+}
+
+.btn.bg-violet-blue:hover, .btn.bg-violet-blue:active {
+   background-color: var(--violet-blue-subtle) !important;
+}
+
+.btn.bg-white:hover, .btn.bg-white:active {
+   background-color: rgba(255, 255, 255, .75) !important;
+   color: var(--violet-blue);
+}
+
+.btn.bg-success:hover, .btn.bg-success:active {
+   background-color: #156c43 !important;
+}
+
+@media (width <= 995px) {
+   .hero > div:nth-of-type(2) {
+      display: none;
+   }
+}
+
+.chat-list-container {
+   margin-top: 150px !important;
+}
+
+.chat-list > button {
+   border-left: 5px solid var(--violet-blue) !important;
+
+   transition: transform .2s ease;
+}
+
+.chat-list > button:hover {
+   transform: translateY(-5%);
+}
+
+.messages-container {
+   height: 72.5vh !important;
+}
+
+.message-container:hover {
+   background-color: rgba(0 0 0 / 3%);
+}
+
+.delete-message-form {
+   top: -1rem;
+   right: 1rem;
+}
+
+.message-container:hover > .delete-message-form {
+   display: initial !important;
+}
+
+.topics-section {
+   min-height: 700px;
+}
+
+.topic-container {
+   transition: transform .2s ease;
+}
+
+.topic-container:hover {
+   transform: translateY(-2.5%);
+}
